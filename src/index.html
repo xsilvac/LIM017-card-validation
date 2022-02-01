@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>LatinoBank</h1>
+    <p>Banca por internet</p>
+  </header>
+
+  <main>
+    <form class="form_validator" action="" id="card_test">
+      <br>
+      <label for="card_number">Número de tarjeta:</label>
+      <input type="number" placeholder="Digita tu número de tarjeta" id="card_number"><br>
+      <br>
+
+      <label for="card_name">Nombre del titular:</label>
+      <input type="text" placeholder="Digita el nombre del titular" id="card_name"><br>
+      <br>
+
+      <label for="card_date">Fecha de expiración:</label>
+      <input type="date" placeholder="Digita la fecha de expiración" id="card_date">
+
+      <label for="card_cvv">CVV:</label>
+      <input type="number" placeholder="Digita el código de seguridad" id="card_cvv"><br>
+      <br>
+      <button type="button" id="send" onclick=""> Enviar </button>
+    </form>
+  </main>
+
+  <footer>
+    <br>
+    <a href="" target="_blank">Regístrate</a>
+    <a href="" target="_blank">Olvide mi contraseña</a>
+    <a href="" target="_blank">Ayuda</a>
+    <br>
+  </footer>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
