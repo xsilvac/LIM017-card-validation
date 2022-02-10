@@ -1,9 +1,15 @@
 body{
     background-color:#c7d9eb;
+    margin: 0;
+    margin: bottom 0;
 }
 header{
     background-color:#445ca1;
-    padding: 3px 0px 3px;
+}
+.intro{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
 }
 .bank {
     font-style:arial;
@@ -12,59 +18,55 @@ header{
 }
 .page{
     font-style: calibri;
-    font-size:25px
-}
-footer{
-    background-color:#718fee;
-    text-align: center;
+    font-size:2em;
+    margin-top: 15px;
 }
 main{
     background-color:#c7d9eb;
-}
-h1{
-    color:white;
-    margin-top: 0px;
 }
 p{
     color: white;
     margin: 20px;
 }
-.conteiner{
-    width: 80%;
-    max-width: 1000px;
-    padding: 40px 30px 30px;
-    margin: auto;
+.form_validator{
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    left: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card{
-    width:100%;
-    max-width: 500px;
-    position:relative;
-    margin-left: 450px;
-    background: black;
-}
-.card{
-    border-radius: 30px;
-    min-height:315px;
+.subtitle{
+    width: 60%;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.new_group{
+    width: 60%;
+    display: flex;
     justify-content: space-between;
 }
-.chip{
+/* #containerForm{
     width: 100%;
-    max-width:80px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    display: block;
 }
-#card_test{
-    text-align:center;
-    background-color: white;
-    max-width: 600px;
-    margin-left: 400px;
-    margin-right: 350px;
-}
+
+/* #containerFormTwo{
+    height:30px;
+    width: 30%;
+    display: none;
+} */
 #send{
     background-color:#ffc74a;
+    font-size: 18px;
+    height:30px;
+    width: 30%;
+    border-radius: 10px;
+}
+footer{
+    background-color:#718fee;
+    text-align: center;
 }

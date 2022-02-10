@@ -2,77 +2,64 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <meta charset="utf-8" />
+  <title>Card Number</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <p class="intro"><span class="bank">LatinoBank</span>/<span class="page">Banca por Internet</span></p>
-    </header>
-
+    <p class="intro"><span class="bank">LatinoBank</span><span class="page">Banca por Internet</span></p>
+  </header>
   <main>
-    <div class="container">
-      <section class="card" id="card">
-        <div class="chip">
-          <img src="chip.png" class="chip" alt="chip">
-          </div>
 
-        <div class="card_data">
-          <div class="group" id="number">
-            <p class="label">Número de tarjeta</p>
-            <p class="number"> </p>
+    <section id="onePage">
+      <div id="containerForm">
+        <form class="form_validator" id="form_validator"><br>
+          <div class="group">
+            <label for="cardNumber">Número de tarjeta:</label>
+              <input type="number" placeholder="Digita tu número de tarjeta" id="cardNumber"><br><br>
           </div>
-
-        <div class="box">
-          <div class="group" id="name">
-            <p class="label">Titular de la tarjeta</p>
-            <p class="name"> </p>
+          <div class="group">
+            <label for="cardName">Nombre del titular:</label>
+              <input type="text" placeholder="Digita el nombre del titular" id="cardName" /><br><br>
           </div>
-
-          <div class="group" id="date">
-            <p class="label">CVV</p>
-            <p class="date"><span class="month">MM</span>/<span class="year">AA</span></p>
+          <div class="subtitle">
+            <label for="selectMonth">Fecha:</label>
+            <label for="cardCvv">CVV:</label>
           </div>
-        </div>
-    </div>
+          <div class="new_group">
+            <div class="selectGroup">
+              <select name="month" id="selectMonth">
+                <option disabled selected>Mes</option>
+              </select>
+            </div>
+            <div class="selectGroup">
+              <select name="year" id="selectYear">
+                <option disabled selected>Año</option>
+              </select>
+            </div>
+            <div class="groupCvv">
+              <input type="text" id="cardCvv" placeholder="Código de seguridad" maxlength="3" />
+            </div>
+          </div><br>
+          <button id="send">Validar</button>
+        </form>
+      </div>
     </section>
-    </div>
 
 
 
 
+    <section id="twoPage" style="display:none">
+      <div id="containerFormTwo">
+        <h3>Bienvenido</h3>
+        <h4>es hora de empezar a pagar</h4>
+        <h4>que podemos hacer</h4>
+      </div>
+    </section>
 
 
-
-
-
-
-
-
-
-
-
-
-    <form class="form_validator" action="" id="card_test">
-      <br>
-      <label for="card_number">Número de tarjeta:</label>
-      <input type="number" placeholder="Digita tu número de tarjeta" id="card_number"><br>
-      <br>
-
-      <label for="card_name">Nombre del titular:</label>
-      <input type="text" placeholder="Digita el nombre del titular" id="card_name"><br>
-      <br>
-
-      <label for="card_date">Fecha de expiración:</label>
-      <input type="date" placeholder="Digita la fecha de expiración" id="card_date">
-
-      <label for="card_cvv">CVV:</label>
-      <input type="number" placeholder="Digita el código de seguridad" id="card_cvv"><br>
-      <br>
-      <button type="button" id="send" onclick=""> Enviar </button>
-    </form>
   </main>
 
   <footer>
@@ -82,7 +69,6 @@
     <a href="" target="_blank">Ayuda</a>
     <br>
   </footer>
-
   <script src="index.js" type="module"></script>
 </body>
 
