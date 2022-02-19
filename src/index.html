@@ -14,49 +14,41 @@
   <main>
 
     <section id="onePage">
-      <div id="containerForm">
-        <form class="form_validator" id="form_validator"><br>
-          <div class="group">
-            <label for="cardNumber">Número de tarjeta:</label>
-              <input type="number" placeholder="Digita tu número de tarjeta" id="cardNumber"><br><br>
-          </div>
-          <div class="group">
-            <label for="cardName">Nombre del titular:</label>
-              <input type="text" placeholder="Digita el nombre del titular" id="cardName" /><br><br>
-          </div>
-          <div class="subtitle">
-            <label for="selectMonth">Fecha:</label>
-            <label for="cardCvv">CVV:</label>
-          </div>
-          <div class="new_group">
-            <div class="selectGroup">
-              <select name="month" id="selectMonth">
-                <option disabled selected>Mes</option>
-              </select>
-            </div>
-            <div class="selectGroup">
-              <select name="year" id="selectYear">
-                <option disabled selected>Año</option>
-              </select>
-            </div>
-            <div class="groupCvv">
-              <input type="text" id="cardCvv" placeholder="Código de seguridad" maxlength="3" />
-            </div>
-          </div><br>
-          <button id="send">Validar</button>
-        </form>
+      <div class="group">
+        <label for="cardNumber">Número de tarjeta:</label>
+        <input type="text" placeholder="Digita tu número de tarjeta" id="cardNumber"><br><br>
+        <p id="newAlert"></p>
       </div>
+      <div class="group">
+        <label for="cardName">Nombre del titular:</label>
+        <input type="text" placeholder="Digita el nombre del titular" id="cardName" /><br><br>
+      </div>
+      <div class="subtitle">
+        <label for="selectMonth">Fecha:</label>
+        <label for="cardCvv">CVV:</label>
+      </div>
+      <div class="new_group">
+        <div class="selectGroup">
+          <select name="month" id="selectMonth">
+            <option disabled selected>Mes</option>
+          </select>
+        </div>
+        <div class="selectGroup">
+          <select name="year" id="selectYear">
+            <option disabled selected>Año</option>
+          </select>
+        </div>
+        <div class="groupCvv">
+          <input type="text" id="cardCvv" placeholder="Código de seguridad" maxlength="3" />
+        </div>
+      </div><br>
+      <button id="send">Validar</button>
     </section>
 
-
-
-
     <section id="twoPage" style="display:none">
-      <div id="containerFormTwo">
-        <h3>Bienvenido</h3>
-        <h4>es hora de empezar a pagar</h4>
-        <h4>que podemos hacer</h4>
-      </div>
+      <h1>Señor(a) <span id="userName"></span> su tarjeta es:</h1>
+      <h3 id="newP"></h3>
+      <button id="homePage">Volver al inicio</button>
     </section>
 
 
