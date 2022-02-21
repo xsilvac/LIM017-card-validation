@@ -1,32 +1,28 @@
-body {
-  background-color: #c7d9eb;
-  margin: 0;
-  margin: bottom 0;
+main {
+  background-image: url("background.png");
+  
 }
 header {
-  background-color: #445ca1;
+  background-color: #f8c1c9;
 }
 .intro {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.bank {
+.business {
+  margin-left: 20px;
+  color: #472d3c;
   font-style: arial;
   font-weight: bold;
   font-size: 3em;
 }
-.page {
+.start {
+  margin-right: 20px;
+  color: #6a4259;
   font-style: calibri;
-  font-size: 2em;
-  margin-top: 15px;
-}
-main {
-  background-color: #c7d9eb;
-}
-p {
-  color: white;
-  margin: 20px;
+  font-size: 40px;
+  margin-top: 10px;
 }
 .conteiner{
   width: 50%;
@@ -76,11 +72,10 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.errorText{
-    color:red;
-}
 #newAlert{
-    color:black;
+    color:rgb(248, 8, 8);
+    font-size: 20px;
+    font-style:oblique;
 }
 #twoPage {
   background: white;
@@ -93,13 +88,14 @@ p {
 .subtitle {
   width: 60%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  
 }
 .new_group {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 #send {
   background-color: #ffc74a;
@@ -116,6 +112,15 @@ p {
   border-radius: 10px;
 }
 footer {
-  background-color: #718fee;
+  background-color: #d7e7f7;
   text-align: center;
+}
+#correctAnswer{
+  color:green;
+}
+#wrongAnswer{
+  color: red;
+}
+#imageAnswer{
+  width: 300px;
 }

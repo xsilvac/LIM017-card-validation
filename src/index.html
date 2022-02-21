@@ -3,20 +3,22 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Card Number</title>
+  <title>Tarjeta de crédito v</title>
+  <link rel="icon" href="LB.png">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <p class="intro"><span class="bank">LatinoBank</span><span class="page">Banca por Internet</span></p>
+    <p class="intro"><span class="business">El club de los peludos</span>
+    <span class="start">Inicio</span></p>
   </header>
   <main>
 
     <section id="onePage">
       <div class="group">
         <label for="cardNumber">Número de tarjeta:</label>
-        <input type="text" placeholder="Digita tu número de tarjeta" id="cardNumber"><br><br>
+        <input type="text" placeholder="Digita tu número de tarjeta" id="cardNumber">
         <p id="newAlert"></p>
       </div>
       <div class="group">
@@ -46,8 +48,11 @@
     </section>
 
     <section id="twoPage" style="display:none">
-      <h1>Señor(a) <span id="userName"></span> su tarjeta es:</h1>
-      <h3 id="newP"></h3>
+      <h1>Señor(a) <span id="userName"></span> su tarjeta:</h1>
+      <h2 id="showCard"></h2>
+      <img id = imageAnswer>
+      <h2 id="correctAnswer"></h2>
+      <h2 id="wrongAnswer"></h2>
       <button id="homePage">Volver al inicio</button>
     </section>
 
