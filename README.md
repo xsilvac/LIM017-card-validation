@@ -5,9 +5,9 @@ de aquellas personas que tienen mascotas y que requieren adquirir comida, juguet
 entre otras para sus mascotas y lo hacen de manera virtual.
 ## 2. Resultado del proyecto
 ![Prototipo final](https://github.com/xsilvac/LIM017-card-validation/blob/main/src/final0.png)
-(https://github.com/xsilvac/LIM017-card-validation/blob/main/src/final1.png)
-(https://github.com/xsilvac/LIM017-card-validation/blob/main/src/final2.png)
-(https://github.com/xsilvac/LIM017-card-validation/blob/main/src/final3.png)
+![](https://github.com/xsilvac/LIM017-card-validation/blob/main/src/final1.png)
+![](https://github.com/xsilvac/LIM017-card-validation/blob/main/src/final2.png)
+![](https://github.com/xsilvac/LIM017-card-validation/blob/main/src/final3.png)
 ## 3. Investigación UX
 **Usuarios**
 Los principales usuarios son aquellas personas mayores de 18 años que tengan
@@ -32,4 +32,4 @@ se entiendan los mensajes con claridad.
 
 **Prototipo final**
 ![Prototipo final](https://github.com/xsilvac/LIM017-card-validation/blob/main/src/prototipoFinal.png)
-(https://github.com/xsilvac/LIM017-card-validation/blob/main/src/prototipoFinal1.png)
+![](https://github.com/xsilvac/LIM017-card-validation/blob/main/src/prototipoFinal1.png)
