@@ -1,9 +1,5 @@
-main {
-  background-image: url("background.png");
-  
-}
-header {
-  background-color: #f8c1c9;
+body {
+  background-image: url("listo.png");
 }
 .intro {
   display: flex;
@@ -12,61 +8,33 @@ header {
 }
 .business {
   margin-left: 20px;
-  color: #472d3c;
+  color: white;
   font-style: arial;
   font-weight: bold;
   font-size: 3em;
 }
 .start {
   margin-right: 20px;
-  color: #6a4259;
+  color: wheat;
   font-style: calibri;
   font-size: 40px;
   margin-top: 10px;
 }
-.conteiner{
-  width: 50%;
-  max-width: 1000px;
-  padding: 40px 30px 30px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+#promo{
+  margin-left: 55%;
+  text-align: center;
 }
-.card{
-  width:150%;
-  max-width: 370px;
-  position:relative;
-  background: black;
-}
-.card{
-  border-radius: 30px;
-  min-height:55px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#bank{
-  font-style:arial;
-  font-weight:bold;
-  font-size:2em;
-}
-.box{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-}
-.chip{
-  width: 100%;
-  max-width:60px;
-  margin: 10px 10px 10px;
+#discount{
+  margin-left: 20px;
+  color: #7f2b0a;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 3em;
 }
 #onePage {
-  background: white;
-  width: 100%;
-  max-width: 500px;
-  position: relative;
-  left: 450px;
+  background-color: white;
+  max-width: 1550px;
+  height: 500px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -78,41 +46,46 @@ header {
     font-style:oblique;
 }
 #twoPage {
-  background: white;
-  width: 100%;
-  max-width: 500px;
-  position: relative;
-  left: 450px;
+  background-color: white;
+  max-width: 1550px;
+  height: 500px;
   text-align: center;
 }
 .subtitle {
-  width: 60%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
-  
+  margin-left:40%;
 }
 .new_group {
-  width: 60%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin-left:40%;
 }
 #send {
   background-color: #ffc74a;
   font-size: 18px;
   height: 30px;
-  width: 30%;
+  width: 15%;
   border-radius: 10px;
 }
 #homePage {
   background-color: #ffc74a;
   font-size: 18px;
   height: 30px;
-  width: 30%;
+  width: 15%;
   border-radius: 10px;
 }
+#toBuy {
+  background-color: #fffaf4;
+  font-size: 18px;
+  height: 30px;
+  width: 25%;
+  border-radius: 20px;
+}
 footer {
-  background-color: #d7e7f7;
   text-align: center;
 }
 #correctAnswer{
@@ -122,5 +95,5 @@ footer {
   color: red;
 }
 #imageAnswer{
-  width: 300px;
+  width: 200px;
 }

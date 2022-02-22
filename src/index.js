@@ -16,18 +16,22 @@ import validator from './validator.js';
 //     selectYear.appendChild(lists);
 // }
 
+const homePage = document.getElementById("toBuy");
+homePage.addEventListener("click", () => {
+    document.getElementById("zeroPage").style.display = "none";
+    document.getElementById("onePage").style.display = "block";
+})
+
 const btn = document.getElementById("send");
 btn.addEventListener("click", inputName);
 function inputName() {
     const cardNumber = document.getElementById("cardNumber").value;
-    const correctAnswer = document.getElementById("correctAnswer");
-    const wrongAnswer = document.getElementById("wrongAnswer");
     const showCard = document.getElementById("showCard");
     const finalText = validator.isValid(cardNumber);
     const maskedFinal = validator.maskify(cardNumber);
+    const newAlert = document.getElementById("newAlert");
 
     if (cardNumber === "") {
-        let newAlert = document.getElementById("newAlert");
         newAlert.innerHTML = "Digite el número de su tarjeta, por favor";
     }
     else {
@@ -35,11 +39,16 @@ function inputName() {
         document.getElementById("twoPage").style.display = "block";
         const cardName = document.getElementById("cardName").value;
         const userName = document.getElementById("userName");
+        const correctAnswer = document.getElementById("correctAnswer");
+        const wrongAnswer = document.getElementById("wrongAnswer");
         let imageAnswer;
         if (finalText == true) {
+            
             userName.innerHTML = cardName;
             showCard.innerHTML = maskedFinal;
             imageAnswer = "check.png";
+            newAlert.innerHTML = "";
+            wrongAnswer.innerHTML = "";
             correctAnswer.innerHTML = "";
             correctAnswer.innerHTML = `Es válida <br> Gracias por su preferencia.`;
         }
@@ -47,6 +56,8 @@ function inputName() {
             userName.innerHTML = cardName;
             showCard.innerHTML = maskedFinal;
             imageAnswer = "aspa.png";
+            newAlert.innerHTML = "";
+            correctAnswer.innerHTML = "";
             wrongAnswer.innerHTML = "";
             wrongAnswer.innerHTML = "Es inválida, intente nuevamente";
         }
@@ -56,8 +67,10 @@ function inputName() {
     return finalText;
 }
 
-const homePage = document.getElementById("homePage");
-homePage.addEventListener("click", () => {
+const validatorPage = document.getElementById("homePage");
+validatorPage.addEventListener("click", () => {
+    document.getElementById("cardNumber").value = "";
+    document.getElementById("cardName").value = "";
     document.getElementById("twoPage").style.display = "none";
     document.getElementById("onePage").style.display = "block";
 })
