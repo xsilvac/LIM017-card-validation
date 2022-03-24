@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tarjeta de crédito</title>
+  <link rel="icon" href="boton.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <p class="intro"><span class="business">El club de los peludos</span>
+      <span class="start">Registrate</span>
+    </p>
+  </header>
+  <main>
+
+
+    <section id="zeroPage">
+      <div id="promo"><br><br><br><br><br>
+        <h1>PODIUM</h1>
+        <h3>Lo que tu campeón se merece</h3>
+        <p id="discount"> 15% de descuento!</p>
+        <h3>con el cupón <b>PATITAS</b></h3>
+        <button id="toBuy">Comprar ahora</button><br><br><br><br><br><br>
+      </div>
+    </section>
+
+    <section id="onePage" style="display: none"><br><br>
+      <img src="tarjeta.png" width="20%"><br><br>
+      <div class="group">
+        <label for="cardNumber">Número de tarjeta:</label>
+        <input type="text" placeholder="Digita tu número de tarjeta" id="cardNumber">
+        <p id="newAlert"></p>
+      </div>
+      <div class="group">
+        <label for="cardName">Nombre del titular:</label>
+        <input type="text" placeholder="Digita el nombre del titular" id="cardName" /><br><br>
+      </div>
+      <div class="subtitle">
+        <label for="selectMonth">Fecha:</label>
+        <label for="cardCvv">CVV:</label>
+      </div>
+      <div class="new_group">
+        <div class="selectGroup">
+          <select name="month" id="selectMonth">
+            <option disabled selected>Mes</option>
+          </select>
+        </div>
+        <div class="selectGroup">
+          <select name="year" id="selectYear">
+            <option disabled selected>Año</option>
+          </select>
+        </div>
+        <div class="groupCvv">
+          <input type="text" id="cardCvv" placeholder="Código de seguridad" maxlength="3" />
+        </div>
+      </div><br>
+      <button id="send">Validar</button>
+    </section>
+
+    <section id="twoPage" style="display:none"><br>
+      <h1>Señor(a) <span id="userName"></span> su tarjeta:</h1>
+      <h2 id="showCard"></h2>
+      <img id="imageAnswer">
+      <h2 id="correctAnswer"></h2>
+      <h2 id="wrongAnswer"></h2>
+      <button id="homePage">Probar de nuevo</button>
+    </section>
+  </main>
+  <footer>
+    <br>
+    <a class="other" href="" target="_blank">Regístrate - </a>
+    <a class="other" href="" target="_blank"> Olvide mi contraseña - </a>
+    <a class="other" href="" target="_blank"> Ayuda</a>
+    <br>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
